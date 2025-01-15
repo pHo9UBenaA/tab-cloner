@@ -39,7 +39,7 @@ const bundleWithEsbuild = async (entryFile: string) => {
     outfile: `${DIST_DIR}/background.js`,
     bundle: true,
     minify: shouldMinify,
-    platform: "neutral",
+    platform: "browser",
     target: ["esnext"],
     plugins: [...denoPlugins()],
   });
